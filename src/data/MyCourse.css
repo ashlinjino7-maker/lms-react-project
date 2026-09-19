@@ -169,3 +169,25 @@
   }
 }
 
+@media (max-width: 768px) {
+
+  .my-course {
+    padding: 30px 15px;
+  }
+
+  .my-course h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .my-course-card {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .my-course-card h2 {
+    font-size: 24px;
+  }
+}
+
