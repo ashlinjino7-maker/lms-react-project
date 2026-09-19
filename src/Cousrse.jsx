@@ -1,4 +1,4 @@
-import CourseCard from "./component/Coursecard";
+import CourseCard from "./component/CourseCard";
 import courses from "./pages/Courses";
 import React from 'react'
 import './Course.css'

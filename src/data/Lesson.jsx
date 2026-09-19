@@ -11,19 +11,19 @@ function Lesson(props) {
     "DOM Manipulation"
   ];
 
-  // Get completed lessons from localStorage
+
   const [completed, setCompleted] = useState(
     JSON.parse(localStorage.getItem("completedLessons")) || []
   );
 
-  // Number of completed lessons
+
   const completedCount = completed.length;
 
-  // Calculate progress
+ 
   const progress =
     40 + (completedCount * 12);
 
-  // Complete lesson
+
   function completeLesson(index) {
 
     if (!completed.includes(index)) {
@@ -32,13 +32,13 @@ function Lesson(props) {
 
       setCompleted(newCompleted);
 
-      // Save completed lessons
+     
       localStorage.setItem(
         "completedLessons",
         JSON.stringify(newCompleted)
       );
 
-      // Update My Course progress
+    
       props.setProgress(progress + 12);
     }
   }

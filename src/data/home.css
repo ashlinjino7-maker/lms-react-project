@@ -179,13 +179,13 @@
 }
 
 
-/* Click Effect */
+
 .home button:active {
   transform: scale(0.97);
 }
 
 
-/* Heading Animation */
+
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -199,7 +199,6 @@
 }
 
 
-/* Paragraph Animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -213,7 +212,7 @@
 }
 
 
-/* Mobile */
+
 @media (max-width: 600px) {
 
   .home {

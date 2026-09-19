@@ -28,7 +28,7 @@
  
 }
 
-/* Decorative gradient */
+
 .two::before {
   content: "";
   position: absolute;
@@ -50,7 +50,6 @@
   opacity: 0.12;
 }
 
-/* Bottom decoration */
 .two::after {
   content: "";
   position: absolute;
@@ -71,7 +70,7 @@
   opacity: 0.10;
 }
 
-/* Hover effect */
+
 .two:hover {
   transform: translateY(-12px) scale(1.02);
 
@@ -80,7 +79,7 @@
     0 10px 25px rgba(0, 0, 0, 0.10);
 }
 
-/* Course title */
+
 .two h2 {
   position: relative;
   z-index: 1;
@@ -101,7 +100,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Course details */
+
 .two p {
   position: relative;
   z-index: 1;
@@ -116,7 +115,7 @@
   color: #64748b;
 }
 
-/* Price */
+
 .two h3 {
   position: relative;
   z-index: 1;
@@ -130,7 +129,7 @@
   color: #111827;
 }
 
-/* Link */
+
 .two a {
   position: relative;
   z-index: 2;
@@ -138,7 +137,6 @@
   text-decoration: none;
 }
 
-/* Button */
 .two button {
   border: none;
   outline: none;
@@ -167,7 +165,7 @@
   transition: all 0.3s ease;
 }
 
-/* Button hover */
+
 .two button:hover {
   transform: translateY(-3px);
 
@@ -181,12 +179,12 @@
     0 12px 25px rgba(79, 70, 229, 0.40);
 }
 
-/* Button click */
+
 .two button:active {
   transform: scale(0.96);
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   .two {
     width: 85%;

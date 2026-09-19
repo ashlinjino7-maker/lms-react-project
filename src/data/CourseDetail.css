@@ -1,4 +1,4 @@
-/* CourseDetail.css */
+
 
 * {
   box-sizing: border-box;
@@ -27,7 +27,7 @@
  
 }
 
-/* Premium background */
+
 
 .jino::before {
   content: "";
@@ -68,7 +68,7 @@
   z-index: -1;
 }
 
-/* Course title */
+
 
 .jino h2:first-child {
   margin: 0 0 30px;
@@ -89,7 +89,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Information paragraphs */
+
 
 .jino > p {
   margin: 15px 0;
@@ -105,7 +105,7 @@
   font-weight: 700;
 }
 
-/* Price */
+
 
 .jino > h3 {
   color: #4f46e5;
@@ -116,7 +116,6 @@
   margin: 25px 0;
 }
 
-/* Section headings */
 
 .jino h3 {
   color: #1e293b;
@@ -128,7 +127,7 @@
   margin-bottom: 15px;
 }
 
-/* About paragraph */
+
 
 .jino h3 + p {
   color: #64748b;
@@ -137,7 +136,6 @@
   font-size: 1rem;
 }
 
-/* Learning list */
 
 .ash {
   list-style: none;
@@ -171,7 +169,7 @@
     background 0.3s ease;
 }
 
-/* Check icon */
+
 
 .ash li::before {
   content: "✓";
@@ -213,7 +211,7 @@
     0 10px 25px rgba(79, 70, 229, 0.12);
 }
 
-/* Enroll button */
+
 
 .jk {
   position: relative;
@@ -256,7 +254,7 @@
   transform: translateY(0);
 }
 
-/* Enrolled message */
+
 
 .jino > h3:last-child {
   padding: 18px 20px;
@@ -274,7 +272,6 @@
   font-size: 1.15rem;
 }
 
-/* Tablet */
 
 @media (max-width: 700px) {
   .jino {
@@ -289,7 +286,7 @@
   }
 }
 
-/* Mobile */
+
 
 @media (max-width: 450px) {
   .jino {
