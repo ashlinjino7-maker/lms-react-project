@@ -1,0 +1,133 @@
+.profile {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(135deg, #dbeafe, #f3e8ff, #fce7f3);
+  background-color: #374151;
+}
+
+.profile h1 {
+  color: #1e1b4b;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid white;
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(79, 70, 229, 0.18);
+
+  backdrop-filter: blur(15px);
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 5px solid white;
+
+  box-shadow: 0 0 0 3px #818cf8;
+}
+
+.profile-card h2 {
+  color: #312e81;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.role {
+  color: #7c3aed;
+  font-size: 18px;
+}
+
+.profile-card hr {
+  border: none;
+  height: 2px;
+  background: #c7d2fe;
+  margin: 25px 0;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-info p {
+  color: #374151;
+  font-size: 16px;
+  margin: 20px 0;
+  overflow-wrap: anywhere;
+}
+
+.profile-card input:not([type="file"]) {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px;
+  margin: 10px 0;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+}
+
+.profile-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 5px #c7d2fe;
+}
+
+.profile-card input[type="file"] {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.profile-card button {
+  margin-top: 25px;
+  padding: 13px 30px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+
+  transition: 0.3s;
+}
+
+.profile-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.35);
+}
+
+@media (max-width: 500px) {
+  .profile-card {
+    padding: 25px 18px;
+  }
+
+  .profile h1 {
+    font-size: 32px;
+  }
+}

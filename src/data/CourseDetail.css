@@ -1,0 +1,314 @@
+/* CourseDetail.css */
+
+* {
+  box-sizing: border-box;
+   
+}
+
+.jino {
+  position: relative;
+  width: min(900px, 92%);
+  margin: 70px auto;
+  padding: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.12),
+    0 8px 25px rgba(79, 70, 229, 0.08);
+  overflow: hidden;
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+ 
+}
+
+/* Premium background */
+
+.jino::before {
+  content: "";
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  top: -150px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.20),
+    rgba(139, 92, 246, 0.08)
+  );
+
+  z-index: -1;
+}
+
+.jino::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  bottom: -120px;
+  left: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(99, 102, 241, 0.10);
+
+  z-index: -1;
+}
+
+/* Course title */
+
+.jino h2:first-child {
+  margin: 0 0 30px;
+
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -1px;
+
+  background: linear-gradient(
+    90deg,
+    #111827,
+    #4f46e5,
+    #7c3aed
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Information paragraphs */
+
+.jino > p {
+  margin: 15px 0;
+
+  color: #64748b;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.jino strong {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+/* Price */
+
+.jino > h3 {
+  color: #4f46e5;
+
+  font-size: 1.6rem;
+  font-weight: 800;
+
+  margin: 25px 0;
+}
+
+/* Section headings */
+
+.jino h3 {
+  color: #1e293b;
+
+  font-size: 1.35rem;
+  font-weight: 750;
+
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* About paragraph */
+
+.jino h3 + p {
+  color: #64748b;
+
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* Learning list */
+
+.ash {
+  list-style: none;
+
+  margin: 20px 0 35px;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.ash li {
+  position: relative;
+
+  padding: 16px 18px 16px 48px;
+
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 14px;
+
+  background: rgba(248, 250, 252, 0.85);
+
+  color: #475569;
+
+  font-size: 0.98rem;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Check icon */
+
+.ash li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 17px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ash li:hover {
+  transform: translateY(-4px);
+
+  background: white;
+
+  box-shadow:
+    0 10px 25px rgba(79, 70, 229, 0.12);
+}
+
+/* Enroll button */
+
+.jk {
+  position: relative;
+
+  width: 100%;
+  padding: 17px 30px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  color: white;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 25px rgba(79, 70, 229, 0.28);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.jk:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 35px rgba(79, 70, 229, 0.35);
+}
+
+.jk:active {
+  transform: translateY(0);
+}
+
+/* Enrolled message */
+
+.jino > h3:last-child {
+  padding: 18px 20px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  background: rgba(34, 197, 94, 0.10);
+
+  border: 1px solid rgba(34, 197, 94, 0.20);
+
+  color: #15803d;
+
+  font-size: 1.15rem;
+}
+
+/* Tablet */
+
+@media (max-width: 700px) {
+  .jino {
+    width: 94%;
+    margin: 40px auto;
+    padding: 35px 25px;
+    border-radius: 24px;
+  }
+
+  .ash {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+  .jino {
+    padding: 28px 20px;
+  }
+
+  .jino h2:first-child {
+    font-size: 2rem;
+  }
+
+  .jino > p {
+    font-size: 0.95rem;
+  }
+
+  .jino h3 {
+    font-size: 1.2rem;
+  }
+
+  .ash li {
+    padding: 14px 14px 14px 45px;
+  }
+}
