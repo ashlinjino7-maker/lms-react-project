@@ -169,5 +169,10 @@
   }
 }
 
-
+@media (max-width: 768px) {
+  .my-course-card {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
 

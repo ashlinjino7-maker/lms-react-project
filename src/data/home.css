@@ -234,3 +234,26 @@
     font-size: 15px;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .home {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: 32px;
+  }
+
+  .home p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .home Link{
+    display: inline-block;
+    margin-top: 15px;
+  }
+}

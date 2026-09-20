@@ -1,256 +1,124 @@
 
-
 .navbar {
   width: 100%;
-  height: 78px;
+  height: 70px;
+  padding: 0 30px;
+  box-sizing: border-box;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 7%;
-
-  box-sizing: border-box;
-
-  background: rgba(10, 15, 35, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-image: url(../assets/WhatsApp\ Image\ 2026-09-18\ at\ 12.09.50\ PM.jpeg);
+  background-image: url("../assets/1.jpeg");
+  background-position: 0%;
   background-size: cover;
- background-position: 0ch;
 }
 
 
 .logo {
-  text-decoration: none;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
 
-  font-size: 32px;
-  font-weight: 900;
-
-  letter-spacing: 3px;
-
-  background: linear-gradient(
-    135deg,
-    #818cf8,
-    #a78bfa,
-    #e879f9
-  );
-
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  filter: drop-shadow(0 0 12px rgba(129, 140, 248, 0.35));
-
-  transition: 0.3s ease;
+  flex-shrink: 0;
 }
-
-
-.logo:hover {
-  transform: scale(1.08);
-
-  filter: drop-shadow(
-    0 0 20px rgba(168, 85, 247, 0.65)
-  );
-}
-
-
 
 .one {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 
-  gap: 38px;
+  gap: 8px;
+  white-space: nowrap;
 }
-
 
 
 .one a {
-  position: relative;
-
-  padding: 10px 2px;
-
-  color: #cbd5e1;
-
   text-decoration: none;
+  color: #374151;
 
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 
-  letter-spacing: 0.3px;
+  padding: 10px 14px;
+  border-radius: 10px;
 
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
-
 
 
 .one a:hover {
-  color: #ffffff;
-
-  transform: translateY(-2px);
-
-  text-shadow:
-    0 0 12px rgba(129, 140, 248, 0.7);
+  color: #4f46e5;
+  background: #f3f4ff;
+  transform: translateY(-1px);
 }
-
-
-
-
-.one a::after {
-  content: "";
-
-  position: absolute;
-
-  left: 50%;
-  bottom: 0;
-
-  width: 0;
-  height: 3px;
-
-  border-radius: 20px;
-
-  background: linear-gradient(
-    90deg,
-    #6366f1,
-    #a855f7,
-    #ec4899
-  );
-
-  transform: translateX(-50%);
-
-  box-shadow:
-    0 0 10px rgba(168, 85, 247, 0.7);
-
-  transition: width 0.35s ease;
-}
-
-
-.one a:hover::after {
-  width: 100%;
-}
-
 
 
 .one a:last-child {
-  padding: 10px 20px;
-
-  border-radius: 30px;
-
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
   color: white;
-
-  background: linear-gradient(
-    135deg,
-    rgba(99, 102, 241, 0.25),
-    rgba(168, 85, 247, 0.25)
-  );
-
-  border: 1px solid rgba(167, 139, 250, 0.3);
-
-  box-shadow:
-    0 5px 20px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.25);
 }
-
-
-.one a:last-child::after {
-  display: none;
-}
-
 
 .one a:last-child:hover {
-  background: linear-gradient(
-    135deg,
-    #6366f1,
-    #a855f7
-  );
-
-  border-color: transparent;
-
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 8px 25px rgba(99, 102, 241, 0.4);
+  color: white;
+  background: linear-gradient(135deg, #4338ca, #6d28d9);
 }
 
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   .navbar {
-    height: auto;
-
-    flex-direction: column;
-
-    gap: 18px;
-
-    padding: 18px 20px;
-  }
-
-  .one {
-    gap: 20px;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-  }
-
-  .one a {
-    font-size: 14px;
-  }
-
-  .one a:last-child {
-    padding: 8px 15px;
+    height: 60px;
+    padding: 0 10px;
   }
 
   .logo {
-    font-size: 28px;
+    font-size: 21px;
+  }
+
+  .one {
+    gap: 2px;
+  }
+
+  .one a {
+    font-size: 11px;
+    padding: 7px 6px;
+    border-radius: 7px;
   }
 }
 
 
+@media (max-width: 380px) {
 
-
-@media (max-width: 450px) {
-
-  .one {
-    gap: 14px;
-  }
-
-  .one a {
-    font-size: 13px;
+  .navbar {
+    padding: 0 6px;
   }
 
   .logo {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .home {
-    width: 100%;
-    min-height: auto;
-    padding: 40px 15px;
-    box-sizing: border-box;
-  }
-
-  .home h1 {
-    font-size: 38px;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .home p {
     font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
   }
 
+  .one {
+    gap: 0;
+  }
+
+  .one a {
+    font-size: 10px;
+    padding: 6px 4px;
+  }
 }

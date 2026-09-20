@@ -21,7 +21,7 @@ function Lesson(props) {
 
  
   const progress =
-    40 + (completedCount * 12);
+    0 + (completedCount * 20);
 
 
   function completeLesson(index) {
